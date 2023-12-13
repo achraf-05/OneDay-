@@ -1,4 +1,4 @@
-# OneDay-
+# OneDay- (projet en branche master)
 Documentation - Projet Test HTML/CSS/JS
 
 Ce projet vise à intégrer en pur HTML, CSS, et JavaScript la vue fournie dans le fichier "inte.png". L'objectif est de reproduire fidèlement l'interface tout en garantissant la responsivité. De plus, une pop-up doit apparaître avec le message "Merci d'avoir cliqué" lorsqu'on clique sur le bouton.
