@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap">
+    <title>OneDay Page</title>
+</head>
+
+<body>
+    <section class="banner">
+        <header id="header">
+            <div class="header-content clearfix">
+                <a href="#" class="logo"><img src="logo.png" alt="OneDay"></a>
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">
+                                <svg class="meatballs-icon" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m16.5 11.995c0-1.242 1.008-2.25 2.25-2.25s2.25 1.008 2.25 2.25-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25zm-6.75 0c0-1.242 1.008-2.25 2.25-2.25s2.25 1.008 2.25 2.25-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25zm-6.75 0c0-1.242 1.008-2.25 2.25-2.25s2.25 1.008 2.25 2.25-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="banner-text">
+                <h1>This is OneDay.</h1>
+                <p>Subtext is used to give detailed information <br> about you, your service or whatever else.</p>
+                <a href="#" class="btn btn-large" onclick="showPopup()">TELL ME MORE.</a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <p>Merci d'avoir cliqué!</p>
+        </div>
+      </div>
+      <script>
+
+        function showPopup() {
+          var modal = document.getElementById('myModal');
+          modal.style.display = 'flex';
+        }
+
+        function closePopup() {
+          var modal = document.getElementById('myModal');
+          modal.style.display = 'none';
+        }
+    
+
+        window.onclick = function(event) {
+          var modal = document.getElementById('myModal');
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        }
+      </script>
+</body>
+
+</html>
