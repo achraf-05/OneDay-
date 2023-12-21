@@ -4,16 +4,19 @@ body {
   font-weight: 100;
   color: #fff;
   overflow: hidden;
-}
-.meatballs-icon {
-  width: 50px; 
-  height: 50px; 
-  fill: #fff; 
-  vertical-align: middle; 
-  margin-left: 5px; 
+  margin: 0;
 }
 
-.banner, #header {
+.meatballs-icon {
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.banner,
+#header {
   background-color: #5F98B6;
 }
 
@@ -25,16 +28,16 @@ body {
 .header-content {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 40px 0;
+  padding: 40px 20px;
   width: 100%;
   transition: padding 0.3s;
 }
 
 .logo {
   float: left;
-  width: 300px;
-  height: 200px;
-  margin-top: -30px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 .navigation {
@@ -48,7 +51,7 @@ body {
 }
 
 .primary-nav li {
-  display: inline-block;
+  display: inline-block; /* Change back to inline-block for larger screens */
   margin-left: 40px;
 }
 
@@ -57,10 +60,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-}
-
-.primary-nav a:hover, .primary-nav a.active {
-  color: #004162;
+  display: inline-block; /* Change to inline-block for larger screens */
 }
 
 .container {
@@ -73,7 +73,7 @@ body {
   font-size: 15px;
   color: #fff;
   position: absolute;
-  bottom: 200px;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -84,7 +84,7 @@ body {
 }
 
 .banner-text p {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .btn {
@@ -97,8 +97,9 @@ body {
   display: inline-block;
   text-transform: uppercase;
   border-radius: 20px;
-  margin-top: 55px;
+  margin-top: 20px;
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -112,7 +113,7 @@ body {
 }
 
 .modal-content {
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -125,4 +126,34 @@ body {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+  .header-content {
+    padding: 20px 10px;
+  }
+
+  .primary-nav {
+    text-align: center; /* Center the navigation items */
+    margin-top: 10px; /* Add margin to the top of the navigation for spacing */
+  }
+
+  .primary-nav li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px; /* Add margin between navigation items */
+  }
+
+  .primary-nav a {
+    display: block;
+  }
+
+  .banner-text {
+    bottom: 50%;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
 }
